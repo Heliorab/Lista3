@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(void) {
+//questao1
+  
+  double pi = 3.14;
+  double raio;
+
+  //letra(a)
+  
+  printf("Digite o raio:\n");
+  scanf("%lf", &raio);
+  
+  double comprimento = 2.0 * pi * raio;
+  printf("O comprimento do círculo é:%lf:\n", comprimento);
+  
+  //letra(b)
+
+  double area = pi * raio * raio;
+  printf("O área do círculo é:%lf :\n", area);
+  //letra(c)
+  double frac = 1.3333333;
+  double Volume = frac * pi * raio * raio * raio;
+  printf("O volume da esfera é:%lf :\n", Volume);
+
+  
+  return 0;
+}
