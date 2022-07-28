@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(void) {
+  double X;
+ 	double *pX;
+  double *pY;
+
+ 	pX = &X;
+  pY = pX;
+
+  printf("Digite um número\n");
+  scanf("%lf", &X);
+ 	printf("Valor da variável: %lf\n", X);
+ 	printf("Endereço da variável: %lf\n", pX);
+  printf("Endereço do ponteiro X: %lf\n", &*pX);
+ 	printf("Endereço do ponteiro Y: %lf\n", pY);
+			
+  
+  return 0;
+}
