@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main(void) {
+
+  int A=1;
+  int B=2;
+  int *pA = &A;
+  int *pB = &B;
+
+  printf("\nEndereço de A: %x\n", pA);
+  printf("Valor de A: %d\n", *pA);
+
+  printf("Endereço de B: %x\n", pB);
+  printf("Valor de B: %d\n\n", *pB);
+
+  printf("Escolha um numero\n");
+  scanf("%d", &A);
+  printf("Endereço de A: %x\n", pA);
+  printf("Valor A: %d\n", *pA);
+
+  pA = pB;
+  printf("Endereço de A: %x\n", pA);
+  
+  
+  return 0;
+}
